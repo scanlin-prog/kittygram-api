@@ -7,29 +7,31 @@ git clone https://github.com/scanlin-prog/kittygram-api
 ```
 
 ```
-cd kittygram_backend
+cd kittygram-backend
 ```
 
 Cоздать и активировать виртуальное окружение:
 
-```
-python3 -m venv env
-```
-
 * Если у вас Linux/macOS
 
+
     ```
-    source env/bin/activate
+    Использовать python3
     ```
 
 * Если у вас windows
 
     ```
-    source env/scripts/activate
+    Использовать python
     ```
 
 ```
-python3 -m pip install --upgrade pip
+py -3.9 -m venv env
+source env/bin/activate
+```
+
+```
+python -m pip install --upgrade pip
 ```
 
 Установить зависимости из файла requirements.txt:
@@ -41,11 +43,11 @@ pip install -r requirements.txt
 Выполнить миграции:
 
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
 
 Запустить проект:
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
